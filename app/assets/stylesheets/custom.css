@@ -1,0 +1,86 @@
+/* Custom overrides for Bootstrap */
+
+.navbar {
+  background-color: rgb(18, 18, 18) !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#home-container {
+  margin-top: 25px;
+}
+
+body .jumbotron {
+  background-image: url('/assets/blog-image.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgrey;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+/* Pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem; /* space between links */
+  padding: 0.5rem 0;
+}
+
+/* Links, spans, current page */
+.pagination a,
+.pagination span,
+.pagination em {
+  padding: 0.3em 0.6em;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #0063dc;
+  font-weight: normal;
+}
+
+/* Hover effect */
+.pagination a:hover {
+  background-color: #0063dc;
+  color: white;
+  border-color: #003366;
+}
+
+/* Current page */
+.pagination em.current {
+  font-weight: bold;
+  background-color: #ff0084;
+  color: white;
+  border-color: #ff0084;
+}
+
+/* Disabled links */
+.pagination span.disabled {
+  color: #aaa;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
